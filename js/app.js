@@ -12,6 +12,7 @@ $.ajax('data/page-1.json').then(peopleData => {
   $('.person-template').first().remove();
 
   arr = [...new Set(arr)];
+  renderOption();
   console.log(arr);
 })
 
@@ -26,12 +27,25 @@ function Person(name) {
 Person.prototype.renderName = function() {
 
   let info = $('.person-template').first().clone();
-  let Options = $('<option></option>').text(this.keyword);
-  $('select').append(Options);
   info.find('span').text(this.title);
   info.find('img').attr('src', this.image_url);
   info.find('p').text(this.description);
   info.find('.p1').text(this.keyword);
   info.find('div').text(`Horns Number: ${this.horns}`);
+  info.addClass(`${this.keyword}`)
   $('main').append(info);
 }
+
+const renderOption = function() {
+
+  arr.forEach((item)=> {
+    let Options = $('<option class = "option"></option>').text(item);
+    $('select').append(Options);
+  });
+}
+
+$('#select').on('change', function(){
+  $('.person-template').hide();
+  let x = `${$(this).val()}`;
+  $(`.${x}`).show();
+})
