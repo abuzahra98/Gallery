@@ -7,14 +7,14 @@ h1 {
     font-size: 44px;
     font-weight: bold;
     font-size: 60px;
-    color: #f5efef;
+    color:#000000;
     margin: 0px 0;
     text-align: center;
     font-family: 'Amatic SC', cursive;
 }
 
 .b1, .b2 {
-    background-color: rgb(238, 212, 65);
+    background-color: #aee1e1;
     border: none;
     border-radius: 33px;
     width: 100px;
@@ -43,7 +43,7 @@ select {
 }
 
 .person-template {
-    background-color: rgb(226, 95, 8);
+    background-color: #d3e0dc;
     width: calc((100% /4));
     border: 1px solid;
     padding: 10px 20px;
@@ -70,7 +70,7 @@ main {
 }
 
 header {
-    background-color: rgb(226, 102, 44);
+    background-color: #fcd1d1;
 }
 
 .ss {
