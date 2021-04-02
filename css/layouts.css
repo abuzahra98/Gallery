@@ -34,15 +34,32 @@ select {
 }
 
 .drop {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     margin: 20px 0px;
+    height: 34vh;
+}
+
+.drop div:nth-child(1){
+   
+    margin-left:38%;
+    height: 19vh;
+}
+
+.drop div:nth-child(2){
+   
+    margin-left:41%;
     height: 19vh;
 }
 
 .person-template {
+
+    float: left;
+    margin-left: 6%;
+    margin-bottom: 3%;
+
     background-color: #d3e0dc;
     width: calc((100% /4));
     border: 1px solid;
@@ -62,10 +79,10 @@ select {
 }
 
 main {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    gap: 40px;
+    gap: 40px; */
     padding: 0 10px;
 }
 
